@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
+:root {
+  --background: #08090b;
+  --gold: #b9955a;
+  --gold-soft: #d7be8a;
+  --text: #f6f0e7;
+  --muted: #b8aea1;
+}
+
 body {
   margin: 0;
-  background: #08090b;
-  color: #f6f0e7;
-  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-body), sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display), serif;
+}
+
+::selection {
+  background: var(--gold);
+  color: #1b140b;
 }
